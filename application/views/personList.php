@@ -33,9 +33,11 @@
     </header>
 
 		<h1>People</h1>
+    <div class="row">
 		<div class="paging"><?php echo $pagination; ?></div>
-		<div class="table"><?php echo $table; ?></div>
-		<br />
+		<div class="table table-striped"><?php echo $table; ?></div>
+    </div>
+
 		<?php echo anchor('person/add/','add new data',array('class'=>'add')); ?>
 	</div>
 </body>

@@ -48,7 +48,7 @@
 				<td><?php echo strtoupper($person->gender)=='M'? 'Male':'Female' ; ?></td>
 			</tr>
 			<tr>
-				<td valign="top">Date of birth (dd-mm-yyyy)</td>
+				<td valign="top">Birth</td>
 				<td><?php echo date('d-m-Y',strtotime($person->dob)); ?></td>
 			</tr>
 		</table>
