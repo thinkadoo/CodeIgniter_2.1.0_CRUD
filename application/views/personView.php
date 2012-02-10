@@ -28,17 +28,12 @@
 
     <header class="jumbotron subhead">
         <h1>CI CRUD</h1>
-
         <p class="lead">CodeIgniter CRUD.</p>
     </header>
 
 		<h1><?php echo $title; ?></h1>
 		<div class="data">
 		<table>
-			<tr>
-				<td width="30%">ID</td>
-				<td><?php echo $person->id; ?></td>
-			</tr>
 			<tr>
 				<td valign="top">Name</td>
 				<td><?php echo $person->name; ?></td>

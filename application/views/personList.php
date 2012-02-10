@@ -28,7 +28,6 @@
 
     <header class="jumbotron subhead">
         <h1>CI CRUD</h1>
-
         <p class="lead">CodeIgniter CRUD.</p>
     </header>
 

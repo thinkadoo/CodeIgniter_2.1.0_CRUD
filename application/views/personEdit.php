@@ -32,45 +32,65 @@
         <p class="lead">CodeIgniter CRUD.</p>
     </header>
 
-		<h1><?php echo $title; ?></h1>
-		<?php echo $message; ?>
-		<form method="post" action="<?php echo $action; ?>">
-		<div class="data">
-		<table>
-			<tr>
-				<td width="30%">ID</td>
-				<td><input type="text" name="id" disabled="disable" class="text" value="<?php echo set_value('id'); ?>"/></td>
-				<input type="hidden" name="id" value="<?php echo set_value('id',$this->form_data->id); ?>"/>
-			</tr>
-			<tr>
-				<td valign="top">Name<span style="color:red;">*</span></td>
-				<td><input type="text" name="name" class="text" value="<?php echo set_value('name',$this->form_data->name); ?>"/>
-<?php echo form_error('name'); ?>
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">Gender<span style="color:red;">*</span></td>
-				<td><input type="radio" name="gender" value="M" <?php echo set_radio('gender', 'M', $this->form_data->gender == 'M'); ?>/> M
-					<input type="radio" name="gender" value="F" <?php echo set_radio('gender', 'F', $this->form_data->gender == 'F'); ?>/> F
-<?php echo form_error('gender'); ?>
-					</td>
-			</tr>
-			<tr>
-				<td valign="top">Birth<span style="color:red;">*</span></td>
-				<td><input type="text" name="dob" onclick="displayDatePicker('dob');" class="text" value="<?php echo set_value('dob',$this->form_data->dob); ?>"/>
-				<a href="javascript:void(0);" onclick="displayDatePicker('dob');"><img src="<?php echo base_url(); ?>res/css/images/calendar.png" alt="calendar" border="0"></a>
-<?php echo form_error('dob'); ?></td>
-				</td>
-			</tr>
-			<tr>
-				<td>&nbsp;</td>
-				<td><input type="submit" value="Save"/></td>
-			</tr>
-		</table>
-		</div>
-		</form>
-		<br />
-		<?php echo $link_back; ?>
-	</div>
+    <h1><?php echo $title; ?></h1>
+    <?php echo $message; ?>
+    <form method="post" action="<?php echo $action; ?>">
+
+        <fieldset>
+
+        <div class="control-group" hidden="true">
+            <label class="control-label" for="id">ID <span>*</span></label>
+
+            <div class="controls docs-input-sizes">
+                <input class="span4" id="id" type="text" name="id"
+                       value="<?php echo set_value('id', $this->form_data->id); ?>"/>
+            </div>
+            <?php echo form_error('id'); ?>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="name">Name <span>*</span></label>
+
+            <div class="controls docs-input-sizes">
+                <input class="span4" id="name" type="text" name="name"
+                       value="<?php echo set_value('name', $this->form_data->name); ?>"/>
+            </div>
+            <?php echo form_error('name'); ?>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="gender">Gender <span>*</span></label>
+
+            <div class="controls docs-input-sizes">
+                <input type="radio" id="gender" name="gender" value="M" <?php echo set_radio('gender', 'M', $this->form_data->gender == 'M'); ?>/> M
+                <input type="radio" id="gender2" name="gender" value="F" <?php echo set_radio('gender', 'F', $this->form_data->gender == 'F'); ?>/> F
+            </div>
+            <?php echo form_error('gender'); ?>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="dob">Birthday <span>*</span></label>
+
+            <div class="controls docs-input-sizes">
+                <input class="span4" id="dob" type="text" name="dob"
+                       value="<?php echo set_value('dob', $this->form_data->dob); ?>"/>
+            </div>
+            <?php echo form_error('dob'); ?>
+        </div>
+
+        <div class="row">
+            <div class="span4">
+                <div class="well">
+                    <input type="submit" value="Save"/>
+                </div>
+            </div>
+        </div>
+
+        </fieldset>
+
+    </form>
+    <br/>
+    <?php echo $link_back; ?>
+</div>
 </body>
 </html>
