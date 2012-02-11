@@ -10,4 +10,4 @@ Desktop and Phone
 http://cl.ly/E8LZ
 
 Desktop and iPad
-http://cl.ly/E6K7
+http://cl.ly/E7Qa

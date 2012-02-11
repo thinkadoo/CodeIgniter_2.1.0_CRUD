@@ -33,7 +33,7 @@
 
 		<h1>People</h1>
     <div class="row">
-        <div class="span6" >
+        <div class="span12" >
 		<div class="paging"><?php echo $pagination; ?></div>
 		<div class="table table-striped"><?php echo $table; ?></div>
         </div>
