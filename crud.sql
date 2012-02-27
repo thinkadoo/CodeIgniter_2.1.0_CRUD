@@ -31,7 +31,6 @@ CREATE TABLE `tbl_person` (
 -- Dumping data for table `tbl_person`
 --
 
-INSERT INTO `tbl_person` VALUES(1, 'Andre N Venter', 'M', '1985-09-09');
 INSERT INTO `tbl_person` VALUES(2, 'name_001', 'M', '1962-01-12');
 INSERT INTO `tbl_person` VALUES(3, 'name_002', 'F', '2000-01-01');
 INSERT INTO `tbl_person` VALUES(4, 'name_003', 'm', '2000-02-02');
@@ -56,4 +55,3 @@ INSERT INTO `tbl_person` VALUES(22, 'name_022', 'm', '2001-09-09');
 INSERT INTO `tbl_person` VALUES(23, 'name_023', 'm', '2001-10-10');
 INSERT INTO `tbl_person` VALUES(24, 'name_024', 'm', '2001-11-11');
 INSERT INTO `tbl_person` VALUES(25, 'name_025', 'm', '2001-12-12');
-INSERT INTO `tbl_person` VALUES(27, 'Robyn', 'F', '1966-04-30');
